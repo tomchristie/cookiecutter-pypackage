@@ -1,0 +1,11 @@
+{
+    "author": "Tom Christie",
+    "email": "tom@tomchristie.com",
+    "github_username": "tomchristie",
+    "module_name": "example_package",
+    "package_name": "example-package",
+    "project_title": "Example package",
+    "project_description": "An example package.",
+    "version": "0.0.1",
+    "year": "2016"
+}
