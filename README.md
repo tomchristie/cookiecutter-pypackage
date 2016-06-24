@@ -14,43 +14,44 @@
 
 ## Change directory into the package
 
-    $ cd {{package_name}}
+    cd {{package_name}}
 
 ## Create the GitHub repo
 
-    Make sure it's under `{{github_username}}/{{package_name}}`
+* Make sure it's under `{{github_username}}/{{package_name}}`
 
 ## Enable in Travis
 
-    * Navigate to `https://travis-ci.org/profile/{{github_username}}`
-    * "Sync account"
-    * Turn on
+* Navigate to `https://travis-ci.org/profile/{{github_username}}`
+* "Sync account"
+* Turn on
 
 ## Push the package to GitHub
 
-    $ git init
-    $ git add .
-    $ git commit -m "Initial commit"
-    $ git remote add origin git@github.com:tomchristie/my-example-project.git
-    $ git push -u origin master
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git remote add origin git@github.com:tomchristie/{{package_name}}.git
+    $git push -u origin master
 
 ## Install requirements
 
-    $ virtualenv -p python3.4 env
-    $ source env/bin/activate
-    $ pip install -r requirements-unfrozen.txt
+    virtualenv -p python3.4 env
+    source env/bin/activate
+    pip install --upgrade pip
+    pip install -r requirements-unfrozen.txt
 
 ## Create an initial pull request
 
-    $ git checkout -b freeze-requirements
-    $ pip freeze > requirements.txt
-    $ git add requirements.txt
-    $ git commit -m "Freeze requirements"
-    $ git push --set-upstream origin freeze-requirements
+    git checkout -b freeze-requirements
+    pip freeze > requirements.txt
+    git add requirements.txt
+    git commit -m "Freeze requirements"
+    git push --set-upstream origin freeze-requirements
 
 ## Publish the package on PyPI
 
-    $ ./setup.py register
-    $ ./setup.py publish
-    $ git tag -a 0.0.1 -m 'version 0.0.1'
-    $ git push --tags
+    ./setup.py register
+    ./setup.py publish
+    git tag -a 0.0.1 -m 'version 0.0.1'
+    git push --tags
