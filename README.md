@@ -1,6 +1,6 @@
-# PyPI package cookiecutter template.
+# PyPI package cookiecutter template
 
-Tom's personal cookiecutter template for creating new packages.
+Tom's personal cookiecutter template for creating new PyPI packages.
 
 ## Create the package
 
