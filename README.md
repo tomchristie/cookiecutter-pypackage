@@ -1,6 +1,6 @@
 # PyPI package cookiecutter template
 
-Tom's personal cookiecutter template for creating new PyPI packages.
+Tom's personal [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template for creating new PyPI packages.
 
 ## Create the package
 
