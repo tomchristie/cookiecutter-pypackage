@@ -1,3 +1,7 @@
+# PyPI package cookiecutter template.
+
+Tom's personal cookiecutter template for creating new packages.
+
 ## Create the package
 
     $ pip install cookiecutter
