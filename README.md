@@ -53,8 +53,12 @@ Tom's personal [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) te
     git commit -m "Freeze requirements"
     git push --set-upstream origin freeze-requirements
 
+Ensure the travis tests run and merge the pull request on GitHub.
+
 ## Publish the package on PyPI
 
+    git checkout master
+    git pull
     ./setup.py register
     ./setup.py publish
     git tag -a 0.0.1 -m 'version 0.0.1'
