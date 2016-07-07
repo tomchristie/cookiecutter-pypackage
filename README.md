@@ -40,7 +40,7 @@ Tom's personal [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) te
 
 ## Install requirements
 
-    virtualenv -p python3.4 env
+    pyvenv-3.5 env
     source env/bin/activate
     pip install --upgrade pip
     pip install -r requirements-unfrozen.txt
