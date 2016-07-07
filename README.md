@@ -35,8 +35,8 @@ Tom's personal [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) te
     git init
     git add .
     git commit -m "Initial commit"
-    git remote add origin git@github.com:tomchristie/{{package_name}}.git
-    $git push -u origin master
+    git remote add origin git@github.com:{{ github_username }}/{{package_name}}.git
+    git push -u origin master
 
 ## Install requirements
 
